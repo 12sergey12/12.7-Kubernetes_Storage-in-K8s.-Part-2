@@ -31,7 +31,7 @@
 
 1. Создать Deployment приложения, состоящего из контейнеров busybox и multitool.
 
-[Deployment.yaml]()
+[Deployment.yaml](https://github.com/12sergey12/12.7-Kubernetes_Storage-in-K8s.-Part-2/blob/main/Deployment.yaml)
 
 ```
 apiVersion: apps/v1
@@ -88,7 +88,7 @@ spec:
 
 2. Создать PV и PVC для подключения папки на локальной ноде, которая будет использована в поде.
 
-[PVC-vol.yaml]()
+[PVC-vol.yaml](https://github.com/12sergey12/12.7-Kubernetes_Storage-in-K8s.-Part-2/blob/main/PVC-vol.yaml)
 
 ```
 apiVersion: v1
@@ -103,7 +103,7 @@ spec:
     requests:
       storage: 2Gi
 ```
-[PV-vol.yaml]()
+[PV-vol.yaml](https://github.com/12sergey12/12.7-Kubernetes_Storage-in-K8s.-Part-2/blob/main/PV-vol.yaml)
 
 ```
 apiVersion: v1
@@ -273,11 +273,11 @@ Success!
 
 6. Предоставить манифесты, а также скриншоты или вывод необходимых команд.
 
-[Deployment.yaml]()
+[Deployment.yaml](https://github.com/12sergey12/12.7-Kubernetes_Storage-in-K8s.-Part-2/blob/main/Deployment.yaml)
 
-[PVC-vol.yaml]()
+[PVC-vol.yaml](https://github.com/12sergey12/12.7-Kubernetes_Storage-in-K8s.-Part-2/blob/main/PVC-vol.yaml)
 
-[PV-vol.yaml]()
+[PV-vol.yaml](https://github.com/12sergey12/12.7-Kubernetes_Storage-in-K8s.-Part-2/blob/main/PV-vol.yaml)
 
 
 ------
@@ -325,7 +325,7 @@ root@baranov:/home/baranovsa/kube-2.2#
 
 2. Создать Deployment приложения состоящего из multitool, и подключить к нему PV, созданный автоматически на сервере NFS.
 
-[deployment_with_nfs.yaml]()
+[deployment_with_nfs.yaml](https://github.com/12sergey12/12.7-Kubernetes_Storage-in-K8s.-Part-2/blob/main/deployment_with_nfs.yaml)
 
 ```
 apiVersion: apps/v1
@@ -362,7 +362,7 @@ my-deployment-nfs-9d5fdf76b-kq58w     1/1     Running   0          103s
 root@baranov:/home/baranovsa/kube-2.2# 
 
 ```
-[pvc_nfs.yaml]()
+[pvc_nfs.yaml](https://github.com/12sergey12/12.7-Kubernetes_Storage-in-K8s.-Part-2/blob/main/pvc_nfs.yaml)
 
 ```
 apiVersion: v1
@@ -403,6 +403,9 @@ total 0
 
 4. Предоставить манифесты, а также скриншоты или вывод необходимых команд.
 
+[deployment_with_nfs.yaml](https://github.com/12sergey12/12.7-Kubernetes_Storage-in-K8s.-Part-2/blob/main/deployment_with_nfs.yaml)
+
+[pvc_nfs.yaml](https://github.com/12sergey12/12.7-Kubernetes_Storage-in-K8s.-Part-2/blob/main/pvc_nfs.yaml)
 ------
 
 ### Правила приёма работы
